@@ -4,13 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.html src/firebase-messaging-sw.js",
+    "test-push": "babel-node test-push.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
     "firebase": "^6.3.1",
-    "parcel-bundler": "^1.12.3"
+    "parcel-bundler": "1.9.5"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ],
+  "dependencies": {
+    "firebase-admin": "^8.2.0"
   }
 }

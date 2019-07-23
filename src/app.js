@@ -15,3 +15,7 @@ Notification.requestPermission().then(async (permission) => {
     console.log('Unable to get permission to notify.');
   }
 });
+
+messaging.onMessage((payload) => {
+  console.log('Message received. ', payload);
+});
